@@ -1,0 +1,195 @@
+/* Apply styles only within the .inventory-page container */
+.inventory-page .container {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+.inventory-page h1 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* Section Divider */
+.inventory-page hr {
+    border-color: #ddd;
+}
+
+/* Table Design */
+/* Add Products Header Style */
+.inventory-page .add-products-header {
+    font-size: 22px;
+    color: #343a40;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.inventory-page .table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.inventory-page .table-bordered th,
+.inventory-page .table-bordered td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: center;
+}
+
+.inventory-page .table-bordered th {
+    background-color: #ff5b55;
+    color: white;
+}
+
+.inventory-page .table-bordered td {
+    background-color: #f8f9fa;
+}
+
+/* Form Styling */
+.inventory-page .form-control {
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.inventory-page input[type="text"] {
+    width: 100%;
+    max-width: 250px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Company Name Styling */
+.inventory-page .form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.inventory-page .form-group input {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Button Styling */
+.inventory-page button {
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.inventory-page .btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+}
+
+.inventory-page .btn-primary {
+    background-color: #ff5b55;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+}
+
+.inventory-page .btn-info {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+}
+
+.inventory-page .btn-success:hover,
+.inventory-page .btn-primary:hover,
+.inventory-page .btn-info:hover {
+    opacity: 0.8;
+}
+
+/* Layout Adjustments */
+.inventory-page .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.inventory-page .col-sm-8,
+.inventory-page .col-m-4 {
+    padding: 0 15px;
+}
+
+.inventory-page .col-sm-8 {
+    flex: 3;
+}
+
+.inventory-page .col-m-4 {
+    flex: 1;
+}
+
+/* Product Name Input Styling */
+.inventory-page input:disabled {
+    background-color: #e9ecef;
+}
+
+/* Total Section Styling */
+.inventory-page .form-group {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.inventory-page h3 {
+    font-size: 18px;
+    color: #495057;
+}
+
+.inventory-page input[type="text"] {
+    font-size: 16px;
+}
+
+.inventory-page button[type='button'] {
+    width: 100%;
+    background-color: #17a2b8;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.inventory-page button[type='button']:hover {
+    opacity: 0.8;
+}
+
+/* Section Divider with Left Alignment */
+.inventory-page hr.align-left {
+    width: 100%;
+    margin: 10px 0;
+    border-top: 1px solid #dee2e6;
+}
+
+.inventory-page h3.align-left {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #343a40;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .inventory-page .row {
+        flex-direction: column;
+    }
+
+    .inventory-page .col-sm-8 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .inventory-page .col-m-4 {
+        width: 100%;
+    }
+
+    /* Adjust form field width on small screens */
+    .inventory-page input[type="text"] {
+        max-width: 100%;
+    }
+}

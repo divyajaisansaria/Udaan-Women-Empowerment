@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udaan: Where Every Dream Takes Flight</title>
+    <link rel="stylesheet" href="/src/styles.css">
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    <button id="chatbotButton" class="chatbot-button">Chat with Us</button>
+    <div id="chatbotContainer" class="iframe-container">
+      <button class="close-btn" id="closeChatbot">×</button>
+      <iframe
+        allow="microphone;"
+        width="350"
+        height="430"
+        src="https://console.dialogflow.com/api-client/demo/embedded/e403623e-b7d3-4d89-95b2-c470257e3df4">
+      </iframe>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const chatbotButton = document.getElementById('chatbotButton');
+      const chatbotContainer = document.getElementById('chatbotContainer');
+      const closeChatbot = document.getElementById('closeChatbot');
+
+      chatbotButton.addEventListener('click', () => {
+        chatbotContainer.style.display = 'block';
+      });
+
+      closeChatbot.addEventListener('click', () => {
+        chatbotContainer.style.display = 'none';
+      });
+    </script>
+  </body>
+</html>

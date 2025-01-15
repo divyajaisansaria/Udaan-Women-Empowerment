@@ -1,0 +1,250 @@
+/* Invoice Generator Styling */
+
+/* Container */
+.invoice-generator-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Form */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 8px;
+  }
+  
+  input[type="number"] {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
+  }
+  
+  input[type="number"]:last-child {
+    margin-right: 0;
+  }
+  
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Add Item Button */
+  .add-item-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .add-item-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Remove Item Button */
+  .remove-item-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .remove-item-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #dc3545;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Total Section */
+  .total {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .total h3 {
+    margin: 10px 0;
+  }
+  
+  /* Button Styles */
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Calculate Button */
+  .calculate-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .calculate-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .calculate-button:active {
+    background-color: #004085;
+  }
+  
+  /* Download Button */
+  .download-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .download-button:hover {
+    background-color: #218838;
+  }
+  
+  .download-button:active {
+    background-color: #1e7e34;
+  }
+  
+  /* Refresh Button */
+  .refresh-button {
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .refresh-button:hover {
+    background-color: #e67e22;
+  }
+  
+  .refresh-button:active {
+    background-color: #d35400;
+  }
+  
+  /* Item Input Styling */
+  .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .item-input {
+    width: 30%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .item-input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Currency Select */
+  select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .invoice-generator-container {
+      padding: 20px;
+    }
+  
+    .item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item-input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .actions button {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .total h3 {
+      font-size: 1.1rem;
+    }
+  
+    .item-input {
+      font-size: 0.9rem;
+    }
+  }
+  
