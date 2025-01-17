@@ -9,7 +9,7 @@ Features
 Job Opportunities: Browse and apply for jobs curated specifically for women.
 Skill Development Courses: Access to various online courses designed to enhance skills and build confidence in the workforce.
 One-on-One Mentorship: Connect with industry experts for personalized mentorship and guidance.
-Business:Can grow your business by going virtual
+Business:Can grow your business by going virtual, can sell products to make woman echonomically empowered
 Business Tools: Utilize tools for women entrepreneurs to help start and manage businesses.
 Multilingual Support: The platform is available in multiple languages to cater to users from different regions.
 Customized Chatbot: An AI-powered chatbot to assist users in navigating the platform and providing quick solutions to frequently asked questions.
